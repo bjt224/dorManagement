@@ -1,0 +1,4 @@
+/* pages/erweima/erweima.wxss */
+image{
+  width: 100%;
+}

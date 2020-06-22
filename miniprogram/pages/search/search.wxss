@@ -1,0 +1,50 @@
+/* miniprogram/pages/search/search.wxss */
+
+
+.search_item {
+  padding: 10rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #aaa;
+}
+
+.search_item:last-child {
+  border-bottom: 0;
+}
+
+.date {
+  padding: 10rpx;
+}
+
+.rate_detail {
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate_detail .rate {
+  width: 80%;
+  border-right: 1px solid #ccc;
+  margin-top: 10rpx;
+}
+
+.rate text {
+  margin-right: 30rpx;
+  font-size: 32rpx;
+}
+
+.rate_detail .detail {
+  font-size: 30rpx;
+  width: 30%;
+  display: flex;
+}
+
+.detail view {
+  margin-top: 10rpx;
+  margin-left: 80rpx;
+}
+
+.detail image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 14rpx;
+}

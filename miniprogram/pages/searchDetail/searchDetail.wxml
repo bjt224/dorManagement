@@ -1,0 +1,24 @@
+<!--miniprogram/pages/searchDetail/searchDetail.wxml-->
+<view class="search_detail">
+  <view class="header">
+    <view class="date">{{rateDetail.date}}</view>
+    <view>该月的水电费详情如下</view>
+  </view>
+  <view class="content">
+    <block wx:for="{{rateDetail.detail}}" wx:key="index">
+      <view class="content_item">
+        <view class="total">{{item.title}}：￥{{item.rate}}</view>
+        <view>
+          <block wx:for="{{item.value}}" wx:key="index">
+            <view>{{item.title}}：￥{{item.value}}</view>
+          </block>
+        </view>
+      </view>
+    </block>
+    <view class="content_item images">
+      <block wx:for="{{imgs}}" wx:key="index">
+        <image src="{{item}}" mode="widthFix" />
+      </block>
+    </view>
+  </view>
+</view>

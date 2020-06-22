@@ -1,0 +1,26 @@
+<!--miniprogram/pages/pay/pay.wxml-->
+<view class="pay">
+  <view class="header">本月应交水电费</view>
+  <block wx:for="{{rateInfo.rateDetail}}" wx:key="index">
+    <view class="pay_item">
+      <view class="item_header">{{item.title}}</view>
+      <view class="item_content">
+        <view class="content">
+          <block wx:for="{{item.value}}" wx:key="index">
+            <view>{{item.title}}：￥{{item.value}}</view>
+          </block>
+          <view class="total">总计{{item.title}}: ￥{{item.rate}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="images">
+    <block wx:for="{{rateInfo.imgs}}" wx:key="index">
+      <image src="{{item}}" mode="widthFix" />
+    </block>
+  </view>
+  <view class="footer">
+    <view class="totalRate">总计：￥{{totalRate}}</view>
+    <view class="payment" bind:tap="onPay">支付</view>
+  </view>
+</view>

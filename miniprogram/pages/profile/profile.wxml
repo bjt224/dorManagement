@@ -1,0 +1,22 @@
+<!--miniprogram/pages/profile/profile.wxml-->
+<view class="header">
+  <view class="avatar">
+    <block wx:if="{{avatar !== ''}}">
+      <image src="{{avatar}}" />
+    </block>
+    <block wx:else>
+      <image src="../../images/profile/avatar.png" />
+    </block>
+  </view>
+  <view class="login">
+    <button wx:if="{{showLogin}}" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class='login_button'>
+      登录
+    </button>
+    <block wx:else>
+      <text>{{nickName}}</text>
+    </block>
+  </view>
+  <view class="arrow" bind:tap="onShowStuInfo">
+    <image src="../../images/common/arrow-right.png" />
+  </view>
+</view>

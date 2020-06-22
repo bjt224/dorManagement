@@ -1,0 +1,19 @@
+<!--miniprogram/pages/search/search.wxml-->
+<view class="search">
+  <block wx:for="{{rateInfo}}" wx:key="index">
+    <view class="search_item">
+      <view class="date">{{item.date}}</view>
+      <view class="rate_detail">
+        <view class="rate">
+          <block wx:for="{{item.rate}}" wx:key="index">
+            <text>{{item.title}}：￥{{item.value}}</text>
+          </block>
+        </view>
+        <view class="detail" bind:tap="goDetail">
+          <view>详情</view>
+          <image src="../../images/common/arrow-right-black.png" />
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

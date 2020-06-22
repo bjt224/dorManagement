@@ -1,0 +1,117 @@
+/* miniprogram/pages/write/write.wxss */
+
+.write {
+  height: 500%;
+}
+
+.rate_item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30rpx;
+}
+
+.rate_item:last-child {
+  border-bottom: 0;
+}
+
+.header {
+  margin: 10rpx 10rpx;
+  padding: 10rpx 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  background: #6b6399;
+  color: white;
+  font-size: 34rpx;
+}
+
+.header image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 22rpx;
+}
+
+.content {
+  margin: 20rpx 0;
+}
+
+.item {
+  padding: 30rpx 20rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.item label {
+  font-size: 32rpx;
+}
+
+.item input {
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 10rpx;
+  padding: 10rpx;
+  border-bottom: 1px solid #aaa;
+  font-size: 28rpx;
+}
+
+.hidden {
+  display: none;
+}
+
+.img-v {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+}
+
+.pic {
+  float: left;
+  position: relative;
+  margin-right: 9px;
+  margin-bottom: 9px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.weui-uploader {
+  padding: 10rpx;
+}
+
+.weui-uploader__img {
+  width: 200rpx;
+}
+
+.upload-img-btn {
+  background: #6b6399;
+  color: #fff;
+  margin-top: 20rpx;
+  margin-bottom: 130rpx;
+}
+
+.bottom_bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #6b6399;
+  color: white;
+  text-align: center;
+  font-size: 40rpx;
+  z-index: 1;
+}
+
+.bottom_bar .button {
+  color: white;
+  margin-top: 15rpx;
+  background: #6b6399;
+  font-size: 40rpx;
+}

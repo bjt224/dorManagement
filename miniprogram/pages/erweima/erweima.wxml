@@ -1,0 +1,4 @@
+<!--pages/erweima/erweima.wxml-->
+<view>
+<image src="../../images/erweima.png" mode="widthFix" />
+</view>

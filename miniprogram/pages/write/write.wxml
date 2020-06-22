@@ -1,0 +1,43 @@
+<!--miniprogram/pages/write/write.wxml-->
+<form bindsubmit="formSubmit">
+  <scroll-view class="write" scroll-y>
+    <!-- 显示水电表填写表单 -->
+    <block wx:for="{{rateType}}" wx:key="index">
+      <view class="rate_item">
+        <view class="header" bind:tap="changeIsShow" data-index="{{index}}">
+          <view>{{item.title}}</view>
+          <image src="../../images/common/arrow-bottom.png" />
+        </view>
+        <view class="content" hidden="{{item.hide}}">
+          <form>
+            <block wx:for="{{item.value}}" wx:key="index">
+              <view class="item">
+                <label>{{item.title}}</label>
+                <input class="input" type="digit" placeholder="{{item.title}}" name="{{item.title}}" value="{{form_info}}" />
+              </view>
+            </block>
+          </form>
+        </view>
+      </view>
+    </block>
+    <!-- 上传图片 -->
+    <view class="weui-uploader">
+      <view class="img-v weui-uploader__bd">
+        <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+          <image class='weui-uploader__img ' src="{{item}}" data-index="{{index}}" mode="widthFix" bindtap="previewImg">
+            <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+          </image>
+        </view>
+
+        <!-- 用来提示用户上传图片 -->
+        <view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view>
+      </view>
+      <button class="upload-img-btn" bind:tap="chooseImg">
+        拍照 / 上传
+      </button>
+    </view>
+  </scroll-view>
+  <view class="bottom_bar">
+    <button class="button" form-type="submit">提交</button>
+  </view>
+</form>

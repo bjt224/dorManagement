@@ -1,0 +1,44 @@
+/* miniprogram/pages/profile/profile.wxss */
+.header {
+  position: relative;
+  height: 180rpx;
+  line-height: 180rpx;
+  display: flex;
+  padding: 10rpx 30rpx;
+  background: #777199;
+  color: white;
+}
+
+
+.avatar image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  background: #f2f2f2;
+  vertical-align: middle;
+}
+
+.login .login_button {
+  vertical-align: middle;
+  color: #fff;
+  font-size: 36rpx;
+  margin-top: 65rpx;
+  padding: 0;
+  width: 150rpx;
+  background: #777199;
+}
+
+.login text {
+  margin-left: 20rpx;
+}
+
+.arrow {
+  position: absolute;
+  right: 30rpx;
+  margin-top: 20rpx;
+}
+
+.arrow image {
+  width: 60rpx;
+  height: 60rpx;
+}

@@ -1,0 +1,17 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="header">
+  <image src="../../images/home/top.jpg" mode="widthFix" />
+</view>
+<view class="content">
+  <view class="school">{{school}}</view>
+  <view class="function">
+    <block wx:for="{{functions}}" wx:key="index">
+      <view class="function_item" 
+            bind:tap="onChangePage"
+            data-index="{{index}}">
+        <image src="../../images/home/{{item.image}}" />
+        <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+</view>

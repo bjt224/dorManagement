@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/profile/profile",
+    "pages/stuInfo/stuInfo",
+    "pages/write/write",
+    "pages/search/search",
+    "pages/pay/pay",
+    "pages/searchDetail/searchDetail",
+    "pages/erweima/erweima"
+  ],
+  "window": {
+    "backgroundColor": "rgb(160, 165, 184)",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#6B6399",
+    "navigationBarTitleText": "水电易",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#6B6399",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我",
+        "iconPath": "images/tabbar/profile.png",
+        "selectedIconPath": "images/tabbar/profile_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

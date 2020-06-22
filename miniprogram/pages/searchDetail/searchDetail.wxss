@@ -1,0 +1,33 @@
+/* miniprogram/pages/searchDetail/searchDetail.wxss */
+.search_detail {
+  margin: 20rpx;
+}
+
+.header {
+  font-size: 40rpx;
+}
+
+.content {
+  margin: 10rpx;
+  font-size: 32rpx;
+}
+
+.content_item .total {
+  font-size: 36rpx;
+  margin-bottom: 10rpx;
+}
+
+.content_item view {
+  margin-bottom: 10rpx;
+}
+
+.images {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+}
+
+.images image {
+  width: 300rpx;
+  margin: 10rpx;
+}

@@ -1,0 +1,74 @@
+/* miniprogram/pages/pay/pay.wxss */
+.header {
+  margin-top: 20rpx;
+  font-size: 38rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pay_item {
+  margin: 20rpx;
+}
+
+.pay_item .item_header {
+  font-size: 34rpx;
+  background: #6B6399;
+  padding: 10rpx;
+  color: white;
+  text-align: center;
+}
+
+.pay_item .item_content {
+  text-align: center;
+}
+
+.item_content view {
+  font-size: 32rpx;
+  margin: 10rpx;
+}
+
+.item_content .total {
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: #6B6399;
+  color: #fff;
+  font-size: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .totalRate {
+  width: 70%;
+  border-right: 1px solid #fff;
+}
+
+.footer .payment {
+  width: 30%;
+}
+
+.modal image {
+  width: 100%;
+  height: 100%;
+}
+
+.images {
+  margin: 40rpx;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+}
+
+.images image {
+  width: 200rpx;
+  margin: 10rpx;
+}

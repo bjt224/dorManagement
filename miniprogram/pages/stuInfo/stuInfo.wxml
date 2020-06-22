@@ -1,0 +1,45 @@
+<!--miniprogram/pages/stuInfo/stuInfo.wxml-->
+<view class="stuInfo">
+  <form bindsubmit="formSubmit">
+    <view class="info">
+      <view class="info_item">
+        <label>{{stuInfo[0].title}}</label>
+        <image src="{{stuInfo[0].value}}" />
+      </view>
+      <view class="info_item">
+        <label>{{stuInfo[1].title}}</label>
+        <picker name="{{stuInfo[1].title}}" 
+                bindchange="bindPickerChange1" 
+                value="{{sexIndex}}" range="{{sex}}">
+          <view class="picker">
+            {{sex[sexIndex]}}
+            <image 
+            src="../../images/common/arrow-bottom-black.png" />
+          </view>
+        </picker>
+      </view>
+      <block wx:for="{{stuInfo}}" wx:key="index" wx:if="{{index > 1 && index < stuInfo.length - 1}}">
+        <view class="info_item">
+          <label>{{item.title}}</label>
+          <input name="{{item.title}}" class="input" type="text"  
+                 value="{{item.value}}" />
+        </view>
+      </block>
+      <view class="info_item">
+        <label>{{stuInfo[stuInfo.length - 1].title}}</label>
+        <picker name="{{stuInfo[stuInfo.length - 1].title}}"  
+                bindchange="bindPickerChange2" 
+                value="{{nationIndex}}" range="{{nation}}">
+          <view class="picker">
+            {{nation[nationIndex]}}
+            <image 
+            src="../../images/common/arrow-bottom-black.png" />
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="button">
+      <button size="mini" form-type="submit">保存</button>
+    </view>
+  </form>
+</view>
